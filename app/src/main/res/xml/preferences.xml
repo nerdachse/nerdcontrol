@@ -1,0 +1,29 @@
+<PreferenceScreen
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            app:key="network_category"
+            app:title="Remote OBS websocket configuration">
+
+        <!-- Default obs_websocket_ip is the android localhost loopback -->
+        <EditTextPreference
+                app:key="obs_websocket_ip"
+                app:title="OBS-websocket IP address"
+                app:summary="IP Address of the obs-websocket you want to control"
+                app:defaultValue="10.0.2.2"
+        />
+        <!--Default port of OBS-websocket-->
+        <EditTextPreference
+                app:key="obs_websocket_port"
+                app:title="OBS-websocket Port"
+                app:summary="Port of the obs-websocket you want to control"
+                app:defaultValue="4455"
+        />
+        <!-- Password -->
+        <EditTextPreference
+                app:key="obs_websocket_password"
+                app:title="OBS-websocket password"
+                app:summary="Password configured in your OBS-websocket instance"
+        />
+    </PreferenceCategory>
+</PreferenceScreen>

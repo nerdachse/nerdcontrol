@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.nerdachse.controlnerd">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_dachs_kopf"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/ic_dachs_kopf"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Controlnerd"
+            android:fullBackupOnly="true">
+        <activity
+                android:name=".MainActivity"
+                android:exported="true"
+                android:label="@string/app_name"
+                android:resizeableActivity="true"
+                android:theme="@style/Theme.Controlnerd.NoActionBar"
+                tools:targetApi="24">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
